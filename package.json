@@ -10,6 +10,9 @@
   "author": "Vequan Clark <vequanclark@yahoo.com> (https://vequan23.github.io/clarks-tech)",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "7.2.0",
+    "@babel/preset-env": "7.2.0",
+    "babel-loader": "8.0.4",
     "clean-webpack-plugin": "1.0.0",
     "html-webpack-plugin": "3.2.0",
     "webpack": "4.27.0",

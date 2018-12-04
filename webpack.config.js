@@ -19,14 +19,14 @@ module.exports = {
             template: './index.html',
             chunks: ['app']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'test.html',
-            template: './test.html',
-            chunks: ['app']
-        })
     ],
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
-    }
+    },
+    module: {
+        rules: [
+          { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+        ]
+      }
 };
