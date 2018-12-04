@@ -10,7 +10,7 @@ module.exports = {
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
-        port: 8000
+        port: 8001
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
@@ -26,7 +26,7 @@ module.exports = {
     },
     module: {
         rules: [
-          { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+          { test: /\.(js)$/, exclude: /node_modules/, loader: 'babel-loader' }
         ]
       }
 };
