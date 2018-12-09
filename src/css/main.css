@@ -1,3 +1,7 @@
-body {
-    text-align: center
-}
+ @import "./teamLanding.css";
+ @import "./resets.css";
+ @import "./layout.css"
+
+
+
+

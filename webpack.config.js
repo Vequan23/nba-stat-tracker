@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
   mode: 'development',
@@ -19,6 +21,13 @@ module.exports = {
       template: './index.html',
       chunks: ['app'],
     }),
+    new CopyWebpackPlugin([
+      {
+        from: 'src/images',
+        to: 'dist/[name].[ext]',
+        toType: 'template'
+      }
+    ])
   ],
   output: {
     filename: '[name].bundle.js',
@@ -32,14 +41,15 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test: /\.(js)$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-      },
-      {
         test: /\.css$/,
         exclude: /node_modules/,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|jpg)$/,
+        use: {
+          loader: "url-loader",
+        },
       },
     ],
   },

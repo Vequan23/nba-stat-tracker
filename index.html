@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Webpack</title>
-</head>
-<body>
-    <h1>Project Starter Kit</h1>
-</body>
+  </head>
+  <body>
+    <header class="landing-header">
+      <h1 class="header__text">NBA STAT TRACKER</h1>
+      <img class="nba-logo" alt="">
+    </header>
+
+    <section>
+      <div class="page-wrapper">
+        <div class="team-search">
+            <input list="browsers" class="team-search__input" placeholder="Search a team" name="browser">
+            <datalist id="browsers">
+              <option value="Internet Explorer">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+          <button class="team-search__button">Search</button>
+        </div>
+        <div class="team-container">
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

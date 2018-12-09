@@ -1,0 +1,59 @@
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.landing-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.team-card {
+    min-width: 16rem;
+    border: 1px solid #000000;
+    min-height: 16rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background: white;
+}
+
+.team-search {
+    padding: 2rem;
+    margin-bottom:2rem;
+    text-align: center;
+    background: #C8102E;
+    border-radius: 1rem;
+}
+
+.team-search__input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.team-search__button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #1D428A;
+    color: white;
+}
+
+.team-search__button:hover {
+    cursor: pointer;
+}
+
+.header__text {
+    text-align: center;
+    font-size: 2em;
+    margin-right: 1rem;
+}
+
+.nba-logo {
+    width: 1.5rem;
+    height: 2.5rem;
+}
+
